@@ -1,0 +1,6 @@
+Changelog
+---------
+
+0.1
+^^^
+Initial version, custom field table is showing with some hardcoded and some dynamic values.
