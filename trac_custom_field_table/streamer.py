@@ -45,8 +45,6 @@ class TracCustomFieldTable(Component):
                 field_value = ticket.values.get(key, "")
                 tickets = []
                 for ticket_id in field_value.split(","):
-                    import pdb
-                    pdb.set_trace()
                     ticket_id = re.sub("[^0-9]", "", ticket_id)
                     try:
                         ticket = Ticket(self.env, ticket_id)
