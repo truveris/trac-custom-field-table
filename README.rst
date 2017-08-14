@@ -15,6 +15,9 @@ As the value, use `enabled` to turn on the display of the table within any
 ticket that has value(s) inside that custom field. Any other value than
 `enabled` will not show the table.
 
+Then, as a sub-item under the same custom field name, list the columns to display
+in the report. I.e. `field.columns = summary, owner`
+
 Example
 =======
 [ticket-custom]
@@ -22,3 +25,4 @@ dependencies = text
 
 [trac_custom_field_table]
 dependencies = enabled
+dependencies.columns = summary, milestone, owner
